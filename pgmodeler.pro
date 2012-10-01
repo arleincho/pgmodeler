@@ -3,12 +3,12 @@ TEMPLATE = subdirs
 
 unix {
  GLOBAL_INCLUDES = .\
-                   /usr/local/pgsql/include \
+                   /usr/include/postgresql/ \
                    /usr/include \
                    /usr/include/libxml2
 
 
- GLOBAL_LIBS =  /usr/local/pgsql/lib/libpq.so \
+ GLOBAL_LIBS =  /usr/lib/libpq.so \
                 -lxml2
 
  LIBUTIL=libutil.so
